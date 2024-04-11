@@ -1,0 +1,70 @@
+Evaluation Starts
+Number of test dataset : 8
+Traceback (most recent call last):
+  File "/home/orange/Crack-detection-CSSR/test.py", line 96, in <module>
+    main()
+  File "/home/orange/Crack-detection-CSSR/test.py", line 91, in main
+    test(args, cfg)
+  File "/home/orange/Crack-detection-CSSR/test.py", line 48, in test
+    inference_for_ss(args, cfg, model, test_loader)
+  File "/home/orange/Crack-detection-CSSR/model/engine/inference.py", line 57, in inference_for_ss
+    sr_preds, segment_preds = model(imgs)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 169, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/orange/Crack-detection-CSSR/model/modeling/build_model.py", line 102, in forward
+    sr_preds = self.sr_model(x)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/orange/Crack-detection-CSSR/model/modeling/dbpn.py", line 185, in forward
+    h2 = self.up2(l1)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/orange/Crack-detection-CSSR/model/modeling/base_networks.py", line 235, in forward
+    h1 = self.up_conv3(l0 - x)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/orange/Crack-detection-CSSR/model/modeling/base_networks.py", line 125, in forward
+    return self.act(out)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/activation.py", line 1332, in forward
+    return F.prelu(input, self.weight)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.99 GiB (GPU 0; 11.75 GiB total capacity; 9.87 GiB already allocated; 506.69 MiB free; 10.46 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/home/orange/Crack-detection-CSSR/test.py", line 96, in <module>
+    main()
+  File "/home/orange/Crack-detection-CSSR/test.py", line 91, in main
+    test(args, cfg)
+  File "/home/orange/Crack-detection-CSSR/test.py", line 48, in test
+    inference_for_ss(args, cfg, model, test_loader)
+  File "/home/orange/Crack-detection-CSSR/model/engine/inference.py", line 57, in inference_for_ss
+    sr_preds, segment_preds = model(imgs)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 169, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/orange/Crack-detection-CSSR/model/modeling/build_model.py", line 102, in forward
+    sr_preds = self.sr_model(x)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/orange/Crack-detection-CSSR/model/modeling/dbpn.py", line 185, in forward
+    h2 = self.up2(l1)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/orange/Crack-detection-CSSR/model/modeling/base_networks.py", line 235, in forward
+    h1 = self.up_conv3(l0 - x)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/orange/Crack-detection-CSSR/model/modeling/base_networks.py", line 125, in forward
+    return self.act(out)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/nn/modules/activation.py", line 1332, in forward
+    return F.prelu(input, self.weight)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.99 GiB (GPU 0; 11.75 GiB total capacity; 9.87 GiB already allocated; 506.69 MiB free; 10.46 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

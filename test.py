@@ -36,7 +36,7 @@ def test(args, cfg):
     batch_sampler = BatchSampler(sampler=sampler, batch_size=args.batch_size, drop_last=False)
     test_loader = DataLoader(test_dataset, num_workers=args.num_workers, batch_sampler=batch_sampler)
 
-    if args.num_gpus > 1:
+    if args.num_gpus >= 1:
         # for k in models.keys():
         #     device_ids = list(range(args.num_gpus))
         #     print("device_ids:",device_ids)
@@ -55,8 +55,8 @@ def main():
     parser.add_argument('--output_dirname', type=str, default=None)
     parser.add_argument('--config_file', type=str, default=None, metavar='FILE')    
     parser.add_argument('--num_workers', type=int, default=8)
-    parser.add_argument('--batch_size', type=int, default=16)
-    parser.add_argument('--num_gpus', type=int, default=6)
+    parser.add_argument('--batch_size', type=int, default=4)
+    parser.add_argument('--num_gpus', type=int, default=1)
     parser.add_argument('--test_aiu', type=bool, default=True)
     parser.add_argument('--trained_model', type=str, default=None)
     parser.add_argument('--wandb_flag', type=bool, default=True)

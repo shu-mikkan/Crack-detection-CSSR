@@ -1,0 +1,62 @@
+Evaluation Starts
+Number of test dataset : 8
+Traceback (most recent call last):
+  File "/home/orange/Crack-detection-CSSR/test.py", line 96, in <module>
+    main()
+  File "/home/orange/Crack-detection-CSSR/test.py", line 91, in main
+    test(args, cfg)
+  File "/home/orange/Crack-detection-CSSR/test.py", line 48, in test
+    inference_for_ss(args, cfg, model, test_loader)
+  File "/home/orange/Crack-detection-CSSR/model/engine/inference.py", line 55, in inference_for_ss
+    for iteration, (imgs, sr_targets, masks, fname) in enumerate(test_loader, 1):
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/_utils.py", line 644, in reraise
+    raise exception
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/orange/Crack-detection-CSSR/model/data/crack_dataset.py", line 56, in __getitem__
+    seg_target = np.array(Image.open(spath))[:, :, np.newaxis] # HxWxC
+  File "/usr/lib/python3/dist-packages/PIL/Image.py", line 2953, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'datasets/crack_segmentation_dataset/test/exp-masks/10m4.jpg'
+Traceback (most recent call last):
+  File "/home/orange/Crack-detection-CSSR/test.py", line 96, in <module>
+    main()
+  File "/home/orange/Crack-detection-CSSR/test.py", line 91, in main
+    test(args, cfg)
+  File "/home/orange/Crack-detection-CSSR/test.py", line 48, in test
+    inference_for_ss(args, cfg, model, test_loader)
+  File "/home/orange/Crack-detection-CSSR/model/engine/inference.py", line 55, in inference_for_ss
+    for iteration, (imgs, sr_targets, masks, fname) in enumerate(test_loader, 1):
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/_utils.py", line 644, in reraise
+    raise exception
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/orange/Crack-detection-CSSR/model/data/crack_dataset.py", line 56, in __getitem__
+    seg_target = np.array(Image.open(spath))[:, :, np.newaxis] # HxWxC
+  File "/usr/lib/python3/dist-packages/PIL/Image.py", line 2953, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'datasets/crack_segmentation_dataset/test/exp-masks/10m4.jpg'

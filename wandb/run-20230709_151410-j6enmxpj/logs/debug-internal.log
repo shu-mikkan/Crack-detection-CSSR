@@ -1,0 +1,183 @@
+2023-07-09 15:14:10,339 INFO    StreamThr :66956 [internal.py:wandb_internal():86] W&B internal server running at pid: 66956, started at: 2023-07-09 15:14:10.339536
+2023-07-09 15:14:10,340 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: status
+2023-07-09 15:14:10,341 INFO    WriterThread:66956 [datastore.py:open_for_write():85] open: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/run-j6enmxpj.wandb
+2023-07-09 15:14:10,341 DEBUG   SenderThread:66956 [sender.py:send():369] send: header
+2023-07-09 15:14:10,343 DEBUG   SenderThread:66956 [sender.py:send():369] send: run
+2023-07-09 15:14:10,891 INFO    SenderThread:66956 [dir_watcher.py:__init__():211] watching files in: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files
+2023-07-09 15:14:10,891 INFO    SenderThread:66956 [sender.py:_start_run_threads():1100] run started: j6enmxpj with start time 1688883250.339796
+2023-07-09 15:14:10,891 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: summary_record
+2023-07-09 15:14:10,892 INFO    SenderThread:66956 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-09 15:14:10,900 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: check_version
+2023-07-09 15:14:10,901 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: check_version
+2023-07-09 15:14:11,042 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: run_start
+2023-07-09 15:14:11,057 DEBUG   HandlerThread:66956 [system_info.py:__init__():31] System info init
+2023-07-09 15:14:11,057 DEBUG   HandlerThread:66956 [system_info.py:__init__():46] System info init done
+2023-07-09 15:14:11,057 INFO    HandlerThread:66956 [system_monitor.py:start():181] Starting system monitor
+2023-07-09 15:14:11,058 INFO    SystemMonitor:66956 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-09 15:14:11,058 INFO    SystemMonitor:66956 [interfaces.py:start():190] Started cpu monitoring
+2023-07-09 15:14:11,058 INFO    HandlerThread:66956 [system_monitor.py:probe():201] Collecting system info
+2023-07-09 15:14:11,059 INFO    SystemMonitor:66956 [interfaces.py:start():190] Started disk monitoring
+2023-07-09 15:14:11,060 INFO    SystemMonitor:66956 [interfaces.py:start():190] Started gpu monitoring
+2023-07-09 15:14:11,061 INFO    SystemMonitor:66956 [interfaces.py:start():190] Started memory monitoring
+2023-07-09 15:14:11,062 INFO    SystemMonitor:66956 [interfaces.py:start():190] Started network monitoring
+2023-07-09 15:14:11,068 DEBUG   HandlerThread:66956 [system_info.py:probe():195] Probing system
+2023-07-09 15:14:11,073 DEBUG   HandlerThread:66956 [system_info.py:_probe_git():180] Probing git
+2023-07-09 15:14:11,083 DEBUG   HandlerThread:66956 [system_info.py:_probe_git():188] Probing git done
+2023-07-09 15:14:11,083 DEBUG   HandlerThread:66956 [system_info.py:probe():240] Probing system done
+2023-07-09 15:14:11,083 DEBUG   HandlerThread:66956 [system_monitor.py:probe():210] {'os': 'Linux-5.19.0-46-generic-x86_64-with-glibc2.35', 'python': '3.10.6', 'heartbeatAt': '2023-07-09T06:14:11.069108', 'startedAt': '2023-07-09T06:14:10.335038', 'docker': None, 'cuda': None, 'args': ('output/CSSR_SR-SS/', '100000'), 'state': 'running', 'program': '/home/orange/Crack-detection-CSSR/test.py', 'codePath': 'test.py', 'git': {'remote': 'https://github.com/shu-mikkan/Crack-detection-CSSR.git', 'commit': 'd6ee57bef8f06cc5edf8e761c43d5ff7af2659eb'}, 'email': None, 'root': '/home/orange/Crack-detection-CSSR', 'host': 'orange-System-Product-Name', 'username': 'orange', 'executable': '/usr/bin/python3', 'cpu_count': 10, 'cpu_count_logical': 16, 'cpu_freq': {'current': 1825.4262500000002, 'min': 800.0, 'max': 4275.0}, 'cpu_freq_per_core': [{'current': 1899.826, 'min': 800.0, 'max': 4600.0}, {'current': 2500.0, 'min': 800.0, 'max': 4600.0}, {'current': 2015.175, 'min': 800.0, 'max': 4600.0}, {'current': 2500.0, 'min': 800.0, 'max': 4600.0}, {'current': 2127.884, 'min': 800.0, 'max': 4600.0}, {'current': 2500.0, 'min': 800.0, 'max': 4600.0}, {'current': 1918.021, 'min': 800.0, 'max': 4600.0}, {'current': 2500.0, 'min': 800.0, 'max': 4600.0}, {'current': 1851.719, 'min': 800.0, 'max': 4600.0}, {'current': 2500.0, 'min': 800.0, 'max': 4600.0}, {'current': 799.551, 'min': 800.0, 'max': 4600.0}, {'current': 2500.0, 'min': 800.0, 'max': 4600.0}, {'current': 1549.292, 'min': 800.0, 'max': 3300.0}, {'current': 1230.826, 'min': 800.0, 'max': 3300.0}, {'current': 1525.043, 'min': 800.0, 'max': 3300.0}, {'current': 2500.0, 'min': 800.0, 'max': 3300.0}], 'disk': {'total': 915.3232879638672, 'used': 51.69794464111328}, 'gpu': 'NVIDIA GeForce RTX 3060', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060', 'memory_total': 12884901888}], 'memory': {'total': 31.15499496459961}}
+2023-07-09 15:14:11,083 INFO    HandlerThread:66956 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-09 15:14:11,083 INFO    HandlerThread:66956 [system_monitor.py:probe():214] Publishing system info
+2023-07-09 15:14:11,083 DEBUG   HandlerThread:66956 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-09 15:14:11,084 DEBUG   HandlerThread:66956 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-09 15:14:11,085 INFO    HandlerThread:66956 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-09 15:14:11,090 DEBUG   SenderThread:66956 [sender.py:send():369] send: files
+2023-07-09 15:14:11,090 INFO    SenderThread:66956 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-09 15:14:11,095 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-09 15:14:11,095 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: stop_status
+2023-07-09 15:14:11,362 DEBUG   SenderThread:66956 [sender.py:send():369] send: telemetry
+2023-07-09 15:14:11,362 DEBUG   SenderThread:66956 [sender.py:send():369] send: config
+2023-07-09 15:14:11,362 DEBUG   SenderThread:66956 [sender.py:send():369] send: telemetry
+2023-07-09 15:14:11,362 DEBUG   SenderThread:66956 [sender.py:send():369] send: run
+2023-07-09 15:14:11,642 INFO    SenderThread:66956 [sender.py:send_run():978] updated run: j6enmxpj
+2023-07-09 15:14:11,642 DEBUG   SenderThread:66956 [sender.py:send():369] send: telemetry
+2023-07-09 15:14:11,892 INFO    Thread-12 :66956 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/config.yaml
+2023-07-09 15:14:11,892 INFO    Thread-12 :66956 [dir_watcher.py:_on_file_created():272] file/dir created: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/requirements.txt
+2023-07-09 15:14:11,892 INFO    Thread-12 :66956 [dir_watcher.py:_on_file_created():272] file/dir created: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/output.log
+2023-07-09 15:14:11,892 INFO    Thread-12 :66956 [dir_watcher.py:_on_file_created():272] file/dir created: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/wandb-summary.json
+2023-07-09 15:14:11,892 INFO    Thread-12 :66956 [dir_watcher.py:_on_file_created():272] file/dir created: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/wandb-metadata.json
+2023-07-09 15:14:11,990 INFO    wandb-upload_0:66956 [upload_job.py:push():133] Uploaded file /tmp/tmphnxpjglawandb/ddxj5fal-wandb-metadata.json
+2023-07-09 15:14:13,891 INFO    Thread-12 :66956 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/output.log
+2023-07-09 15:14:14,371 DEBUG   SenderThread:66956 [sender.py:send():369] send: exit
+2023-07-09 15:14:14,371 INFO    SenderThread:66956 [sender.py:send_exit():574] handling exit code: 1
+2023-07-09 15:14:14,371 INFO    SenderThread:66956 [sender.py:send_exit():576] handling runtime: 3
+2023-07-09 15:14:14,372 INFO    SenderThread:66956 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-09 15:14:14,372 INFO    SenderThread:66956 [sender.py:send_exit():582] send defer
+2023-07-09 15:14:14,372 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:14,372 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 0
+2023-07-09 15:14:14,372 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:14,372 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-07-09 15:14:14,372 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 1
+2023-07-09 15:14:14,372 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:14,372 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 1
+2023-07-09 15:14:14,372 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:14,372 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-07-09 15:14:14,372 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 2
+2023-07-09 15:14:14,372 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:14,372 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 2
+2023-07-09 15:14:14,372 INFO    HandlerThread:66956 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-09 15:14:14,372 DEBUG   SystemMonitor:66956 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-09 15:14:14,373 INFO    HandlerThread:66956 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-09 15:14:14,373 DEBUG   SystemMonitor:66956 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-09 15:14:14,373 INFO    HandlerThread:66956 [interfaces.py:finish():202] Joined disk monitor
+2023-07-09 15:14:14,373 DEBUG   SystemMonitor:66956 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-09 15:14:14,417 INFO    HandlerThread:66956 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-09 15:14:14,417 INFO    HandlerThread:66956 [interfaces.py:finish():202] Joined memory monitor
+2023-07-09 15:14:14,417 INFO    HandlerThread:66956 [interfaces.py:finish():202] Joined network monitor
+2023-07-09 15:14:14,418 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:14,418 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-07-09 15:14:14,418 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 3
+2023-07-09 15:14:14,418 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:14,418 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 3
+2023-07-09 15:14:14,418 DEBUG   SenderThread:66956 [sender.py:send():369] send: stats
+2023-07-09 15:14:14,418 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:14,418 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-07-09 15:14:14,418 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 4
+2023-07-09 15:14:14,418 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:14,418 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 4
+2023-07-09 15:14:14,418 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:14,418 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-07-09 15:14:14,418 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 5
+2023-07-09 15:14:14,419 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:14,419 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 5
+2023-07-09 15:14:14,419 DEBUG   SenderThread:66956 [sender.py:send():369] send: summary
+2023-07-09 15:14:14,419 INFO    SenderThread:66956 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-09 15:14:14,419 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:14,419 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-07-09 15:14:14,419 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 6
+2023-07-09 15:14:14,419 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:14,419 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 6
+2023-07-09 15:14:14,419 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:14,419 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-07-09 15:14:14,421 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: status_report
+2023-07-09 15:14:14,643 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 7
+2023-07-09 15:14:14,643 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:14,643 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 7
+2023-07-09 15:14:14,643 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:14,643 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-07-09 15:14:14,892 INFO    Thread-12 :66956 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/wandb-summary.json
+2023-07-09 15:14:14,893 INFO    Thread-12 :66956 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/config.yaml
+2023-07-09 15:14:15,372 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-09 15:14:16,322 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 8
+2023-07-09 15:14:16,323 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: poll_exit
+2023-07-09 15:14:16,325 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:16,325 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 8
+2023-07-09 15:14:16,326 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:16,326 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-07-09 15:14:16,326 INFO    SenderThread:66956 [job_builder.py:build():240] Attempting to build job artifact
+2023-07-09 15:14:16,326 INFO    SenderThread:66956 [job_builder.py:build():264] is repo sourced job
+2023-07-09 15:14:16,328 INFO    SenderThread:66956 [job_builder.py:build():305] adding wandb-job metadata file
+2023-07-09 15:14:16,330 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 9
+2023-07-09 15:14:16,330 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:16,330 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 9
+2023-07-09 15:14:16,331 DEBUG   SenderThread:66956 [sender.py:send():369] send: artifact
+2023-07-09 15:14:16,373 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-09 15:14:16,894 INFO    Thread-12 :66956 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/output.log
+2023-07-09 15:14:17,964 INFO    SenderThread:66956 [sender.py:send_artifact():1450] sent artifact job-https___github.com_shu-mikkan_Crack-detection-CSSR.git_test.py - {'id': 'QXJ0aWZhY3Q6NTA4NjY3MjQy', 'digest': 'dd6f227ede436bec2af01c7b287f775c', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_shu-mikkan_Crack-detection-CSSR.git_test.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_shu-mikkan_Crack-detection-CSSR.git_test.py', 'alias': 'v1'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjgxNTU0MDk4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTA4NjY3MjQy', 'versionIndex': 1}}, 'version': 'v1'}
+2023-07-09 15:14:17,964 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:17,965 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 9
+2023-07-09 15:14:17,965 INFO    SenderThread:66956 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-07-09 15:14:18,896 INFO    SenderThread:66956 [dir_watcher.py:finish():389] scan: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files
+2023-07-09 15:14:18,897 INFO    SenderThread:66956 [dir_watcher.py:finish():403] scan save: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/output.log output.log
+2023-07-09 15:14:18,897 INFO    SenderThread:66956 [dir_watcher.py:finish():403] scan save: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/config.yaml config.yaml
+2023-07-09 15:14:18,897 INFO    SenderThread:66956 [dir_watcher.py:finish():403] scan save: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/requirements.txt requirements.txt
+2023-07-09 15:14:18,897 INFO    SenderThread:66956 [dir_watcher.py:finish():403] scan save: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/wandb-summary.json wandb-summary.json
+2023-07-09 15:14:18,898 INFO    SenderThread:66956 [dir_watcher.py:finish():403] scan save: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/wandb-metadata.json wandb-metadata.json
+2023-07-09 15:14:18,898 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 10
+2023-07-09 15:14:18,898 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: poll_exit
+2023-07-09 15:14:18,898 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:18,899 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 10
+2023-07-09 15:14:18,900 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:18,900 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 10
+2023-07-09 15:14:18,900 INFO    SenderThread:66956 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-09 15:14:19,510 INFO    wandb-upload_1:66956 [upload_job.py:push():133] Uploaded file /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/output.log
+2023-07-09 15:14:19,675 INFO    wandb-upload_2:66956 [upload_job.py:push():133] Uploaded file /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/config.yaml
+2023-07-09 15:14:20,345 INFO    wandb-upload_3:66956 [upload_job.py:push():133] Uploaded file /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/wandb-summary.json
+2023-07-09 15:14:20,384 INFO    wandb-upload_0:66956 [upload_job.py:push():133] Uploaded file /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/files/requirements.txt
+2023-07-09 15:14:20,585 INFO    Thread-11 (_thread_body):66956 [sender.py:transition_state():602] send defer: 11
+2023-07-09 15:14:20,586 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:20,586 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 11
+2023-07-09 15:14:20,587 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:20,587 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 11
+2023-07-09 15:14:20,587 INFO    SenderThread:66956 [file_pusher.py:join():164] waiting for file pusher
+2023-07-09 15:14:20,588 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 12
+2023-07-09 15:14:20,588 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:20,588 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 12
+2023-07-09 15:14:20,589 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:20,589 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 12
+2023-07-09 15:14:20,782 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 13
+2023-07-09 15:14:20,782 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:20,782 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 13
+2023-07-09 15:14:20,783 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:20,783 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 13
+2023-07-09 15:14:20,784 INFO    SenderThread:66956 [sender.py:transition_state():602] send defer: 14
+2023-07-09 15:14:20,784 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: defer
+2023-07-09 15:14:20,785 INFO    HandlerThread:66956 [handler.py:handle_request_defer():170] handle defer: 14
+2023-07-09 15:14:20,786 DEBUG   SenderThread:66956 [sender.py:send():369] send: final
+2023-07-09 15:14:20,786 DEBUG   SenderThread:66956 [sender.py:send():369] send: footer
+2023-07-09 15:14:20,786 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: defer
+2023-07-09 15:14:20,786 INFO    SenderThread:66956 [sender.py:send_request_defer():598] handle sender defer: 14
+2023-07-09 15:14:20,788 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-09 15:14:20,790 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: server_info
+2023-07-09 15:14:20,790 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: get_summary
+2023-07-09 15:14:20,791 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: poll_exit
+2023-07-09 15:14:20,791 DEBUG   SenderThread:66956 [sender.py:send_request():396] send_request: server_info
+2023-07-09 15:14:20,797 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: sampled_history
+2023-07-09 15:14:20,961 INFO    MainThread:66956 [wandb_run.py:_footer_history_summary_info():3464] rendering history
+2023-07-09 15:14:20,961 INFO    MainThread:66956 [wandb_run.py:_footer_history_summary_info():3496] rendering summary
+2023-07-09 15:14:20,961 INFO    MainThread:66956 [wandb_run.py:_footer_sync_info():3423] logging synced files
+2023-07-09 15:14:20,961 DEBUG   HandlerThread:66956 [handler.py:handle_request():144] handle_request: shutdown
+2023-07-09 15:14:20,961 INFO    HandlerThread:66956 [handler.py:finish():854] shutting down handler
+2023-07-09 15:14:21,791 INFO    WriterThread:66956 [datastore.py:close():298] close: /home/orange/Crack-detection-CSSR/wandb/run-20230709_151410-j6enmxpj/run-j6enmxpj.wandb
+2023-07-09 15:14:21,961 INFO    SenderThread:66956 [sender.py:finish():1526] shutting down sender
+2023-07-09 15:14:21,961 INFO    SenderThread:66956 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-09 15:14:21,961 INFO    SenderThread:66956 [file_pusher.py:join():164] waiting for file pusher

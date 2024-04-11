@@ -1,0 +1,70 @@
+Evaluation Starts
+Number of test dataset : 8
+Traceback (most recent call last):
+  File "/home/orange/Crack-detection-CSSR/test.py", line 96, in <module>
+    main()
+  File "/home/orange/Crack-detection-CSSR/test.py", line 91, in main
+    test(args, cfg)
+  File "/home/orange/Crack-detection-CSSR/test.py", line 48, in test
+    inference_for_ss(args, cfg, model, test_loader)
+  File "/home/orange/Crack-detection-CSSR/model/engine/inference.py", line 55, in inference_for_ss
+    for iteration, (imgs, sr_targets, masks, fname) in enumerate(test_loader, 1):
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/_utils.py", line 644, in reraise
+    raise exception
+RuntimeError: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/orange/Crack-detection-CSSR/model/data/crack_dataset.py", line 57, in __getitem__
+    img, seg_target = self.img_transforms(img, seg_target)
+  File "/home/orange/Crack-detection-CSSR/model/data/transforms/data_preprocess.py", line 29, in __call__
+    image, mask = self.augment(image, mask)
+  File "/home/orange/Crack-detection-CSSR/model/data/transforms/transforms.py", line 132, in __call__
+    img, mask = t(img, mask)
+  File "/home/orange/Crack-detection-CSSR/model/data/transforms/transforms.py", line 173, in __call__
+    return torch.from_numpy(image.astype(np.float32)).permute(2, 0, 1), torch.from_numpy(mask.astype(np.float32)).permute(2, 0, 1)
+RuntimeError: permute(sparse_coo): number of dimensions in the tensor input does not match the length of the desired ordering of dimensions i.e. input.dim() = 4 is not equal to len(dims) = 3
+Traceback (most recent call last):
+  File "/home/orange/Crack-detection-CSSR/test.py", line 96, in <module>
+    main()
+  File "/home/orange/Crack-detection-CSSR/test.py", line 91, in main
+    test(args, cfg)
+  File "/home/orange/Crack-detection-CSSR/test.py", line 48, in test
+    inference_for_ss(args, cfg, model, test_loader)
+  File "/home/orange/Crack-detection-CSSR/model/engine/inference.py", line 55, in inference_for_ss
+    for iteration, (imgs, sr_targets, masks, fname) in enumerate(test_loader, 1):
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/_utils.py", line 644, in reraise
+    raise exception
+RuntimeError: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/orange/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/orange/Crack-detection-CSSR/model/data/crack_dataset.py", line 57, in __getitem__
+    img, seg_target = self.img_transforms(img, seg_target)
+  File "/home/orange/Crack-detection-CSSR/model/data/transforms/data_preprocess.py", line 29, in __call__
+    image, mask = self.augment(image, mask)
+  File "/home/orange/Crack-detection-CSSR/model/data/transforms/transforms.py", line 132, in __call__
+    img, mask = t(img, mask)
+  File "/home/orange/Crack-detection-CSSR/model/data/transforms/transforms.py", line 173, in __call__
+    return torch.from_numpy(image.astype(np.float32)).permute(2, 0, 1), torch.from_numpy(mask.astype(np.float32)).permute(2, 0, 1)
+RuntimeError: permute(sparse_coo): number of dimensions in the tensor input does not match the length of the desired ordering of dimensions i.e. input.dim() = 4 is not equal to len(dims) = 3

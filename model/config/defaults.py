@@ -46,8 +46,8 @@ _C.INPUT.STD = [0.1621, 0.1532, 0.1523]
 _C.DATASET = CN()
 _C.DATASET.TRAIN_IMAGE_DIR = 'datasets/crack_segmentation_dataset/train/images'
 _C.DATASET.TRAIN_MASK_DIR = 'datasets/crack_segmentation_dataset/train/masks'
-_C.DATASET.TEST_IMAGE_DIR = 'datasets/crack_segmentation_dataset/test/images'
-_C.DATASET.TEST_MASK_DIR = 'datasets/crack_segmentation_dataset/test/masks'
+_C.DATASET.TEST_IMAGE_DIR = 'datasets/crack_segmentation_dataset/test/exp-images'
+_C.DATASET.TEST_MASK_DIR = 'datasets/crack_segmentation_dataset/test/exp-masks'
 
 _C.OUTPUT_DIR = 'output/CSSR_SR-SS'
 _C.SEED = 123

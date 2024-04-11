@@ -1,0 +1,128 @@
+{
+    "os": "Linux-6.2.0-31-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-09-13T02:55:40.205931",
+    "startedAt": "2023-09-13T02:55:39.521510",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "output/CSSR_SR-SS/",
+        "100000"
+    ],
+    "state": "running",
+    "program": "/home/orange/Crack-detection-CSSR/test.py",
+    "codePath": "test.py",
+    "git": {
+        "remote": "https://github.com/shu-mikkan/Crack-detection-CSSR.git",
+        "commit": "d6ee57bef8f06cc5edf8e761c43d5ff7af2659eb"
+    },
+    "email": null,
+    "root": "/home/orange/Crack-detection-CSSR",
+    "host": "orange-System-Product-Name",
+    "username": "orange",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 10,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2017.3049375,
+        "min": 800.0,
+        "max": 4275.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1699.78,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1944.976,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1899.949,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1642.302,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1997.417,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1570.16,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1896.916,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1887.913,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1313.985,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1423.481,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2500.0,
+            "min": 800.0,
+            "max": 3300.0
+        }
+    ],
+    "disk": {
+        "total": 915.3232879638672,
+        "used": 73.83176803588867
+    },
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 31.15203857421875
+    }
+}

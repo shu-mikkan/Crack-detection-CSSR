@@ -1,0 +1,29 @@
+2023-07-24 14:48:57,236 INFO    MainThread:615829 [wandb_setup.py:_flush():76] Current SDK version is 0.15.5
+2023-07-24 14:48:57,236 INFO    MainThread:615829 [wandb_setup.py:_flush():76] Configure stats pid to 615829
+2023-07-24 14:48:57,236 INFO    MainThread:615829 [wandb_setup.py:_flush():76] Loading settings from /home/orange/.config/wandb/settings
+2023-07-24 14:48:57,236 INFO    MainThread:615829 [wandb_setup.py:_flush():76] Loading settings from /home/orange/Crack-detection-CSSR/wandb/settings
+2023-07-24 14:48:57,236 INFO    MainThread:615829 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-07-24 14:48:57,236 INFO    MainThread:615829 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-07-24 14:48:57,236 INFO    MainThread:615829 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'test.py', 'program': '/home/orange/Crack-detection-CSSR/test.py'}
+2023-07-24 14:48:57,236 INFO    MainThread:615829 [wandb_init.py:_log_setup():507] Logging user logs to /home/orange/Crack-detection-CSSR/wandb/run-20230724_144857-caazxqqt/logs/debug.log
+2023-07-24 14:48:57,236 INFO    MainThread:615829 [wandb_init.py:_log_setup():508] Logging internal logs to /home/orange/Crack-detection-CSSR/wandb/run-20230724_144857-caazxqqt/logs/debug-internal.log
+2023-07-24 14:48:57,237 INFO    MainThread:615829 [wandb_init.py:init():547] calling init triggers
+2023-07-24 14:48:57,237 INFO    MainThread:615829 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'DEVICE': 'cuda', 'MODEL': CfgNode({'SCALE_FACTOR': 4, 'DETECTOR_TYPE': 'u-net16', 'SR': 'DBPN', 'UP_SAMPLE_METHOD': 'pixel_shuffle', 'DETECTOR_DBPN_NUM_STAGES': 4, 'OPTIMIZER': 'Adam', 'NUM_CLASSES': 1, 'NUM_STAGES': 6, 'SR_SEG_INV': False, 'JOINT_LEARNING': True}), 'SOLVER': CfgNode({'MAX_ITER': 100000, 'TRAIN_DATASET_RATIO': 0.95, 'SR_PRETRAIN_ITER': 0, 'SEG_PRETRAIN_ITER': 0, 'BATCH_SIZE': 6, 'TASK_LOSS_WEIGHT': 0.3, 'SEG_LOSS_FUNC': 'BoundaryCombo', 'BOUNDARY_DEC_RATIO': 1.0, 'SR_LOSS_FUNC': 'L1', 'WB_AND_D_WEIGHT': [1, 1], 'BCELOSS_WEIGHT': [1, 1], 'ALPHA_MIN': 0.01, 'DECREASE_RATIO': 1.0, 'SYNC_BATCHNORM': True, 'NORM_SR_OUTPUT': 'instance', 'LR': 1e-05, 'LR_STEPS': [], 'GAMMA': 0.1, 'WARMUP_FACTOR': 1.0, 'WARMUP_ITERS': 5000}), 'INPUT': CfgNode({'IMAGE_SIZE': [448, 448], 'MEAN': [0.4741, 0.4937, 0.5048], 'STD': [0.1621, 0.1532, 0.1523]}), 'DATASET': CfgNode({'TRAIN_IMAGE_DIR': 'datasets/crack_segmentation_dataset/train/images', 'TRAIN_MASK_DIR': 'datasets/crack_segmentation_dataset/train/masks', 'TEST_IMAGE_DIR': 'datasets/crack_segmentation_dataset/test/exp-images', 'TEST_MASK_DIR': 'datasets/crack_segmentation_dataset/test/exp-masks'}), 'OUTPUT_DIR': 'output/CSSR_SR-SS/eval_AIU/iter_100000', 'SEED': 123, 'BASE_NET': 'weights/vgg16_reducedfc.pth'}
+2023-07-24 14:48:57,237 INFO    MainThread:615829 [wandb_init.py:init():596] starting backend
+2023-07-24 14:48:57,237 INFO    MainThread:615829 [wandb_init.py:init():600] setting up manager
+2023-07-24 14:48:57,238 INFO    MainThread:615829 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-07-24 14:48:57,239 INFO    MainThread:615829 [wandb_init.py:init():606] backend started and connected
+2023-07-24 14:48:57,240 INFO    MainThread:615829 [wandb_init.py:init():705] updated telemetry
+2023-07-24 14:48:57,242 INFO    MainThread:615829 [wandb_init.py:init():738] communicating run to backend with 60.0 second timeout
+2023-07-24 14:48:57,838 INFO    MainThread:615829 [wandb_run.py:_on_init():2173] communicating current version
+2023-07-24 14:48:58,705 INFO    MainThread:615829 [wandb_run.py:_on_init():2182] got version response 
+2023-07-24 14:48:58,705 INFO    MainThread:615829 [wandb_init.py:init():789] starting run threads in backend
+2023-07-24 14:48:58,754 INFO    MainThread:615829 [wandb_run.py:_console_start():2152] atexit reg
+2023-07-24 14:48:58,755 INFO    MainThread:615829 [wandb_run.py:_redirect():2007] redirect: SettingsConsole.WRAP_RAW
+2023-07-24 14:48:58,755 INFO    MainThread:615829 [wandb_run.py:_redirect():2072] Wrapping output streams.
+2023-07-24 14:48:58,755 INFO    MainThread:615829 [wandb_run.py:_redirect():2097] Redirects installed.
+2023-07-24 14:48:58,756 INFO    MainThread:615829 [wandb_init.py:init():830] run started, returning control to user process
+2023-07-24 14:48:58,758 INFO    MainThread:615829 [wandb_run.py:_config_callback():1281] config_cb None None {'test_dir': 'output/CSSR_SR-SS/', 'iteration': 100000, 'output_dirname': 'output/CSSR_SR-SS/eval_AIU/iter_100000', 'config_file': 'output/CSSR_SR-SS/config.yaml', 'num_workers': 8, 'batch_size': 8, 'num_gpus': 1, 'test_aiu': True, 'trained_model': 'output/CSSR_SR-SS/model/iteration_100000.pth', 'wandb_flag': True, 'wandb_prj_name': 'CSSR_kyoken_test_blur'}
+2023-07-24 14:48:58,759 INFO    MainThread:615829 [wandb_watch.py:watch():51] Watching
+2023-07-24 14:49:10,323 WARNING MsgRouterThr:615829 [router.py:message_loop():77] message_loop has been closed

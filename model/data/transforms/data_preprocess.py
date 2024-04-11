@@ -22,6 +22,7 @@ class TestTransforms:
         self.augment = Compose([
             ConvertFromInts(),
             ToTensor(),
+            #RandomResizedCrop(cfg=cfg),
         ])
 
     def __call__(self, image, mask):

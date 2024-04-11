@@ -1,0 +1,136 @@
+wandb_version: 1
+
+DEVICE:
+  desc: null
+  value: cuda
+MODEL:
+  desc: null
+  value:
+    SCALE_FACTOR: 4
+    DETECTOR_TYPE: u-net16
+    SR: DBPN
+    UP_SAMPLE_METHOD: pixel_shuffle
+    DETECTOR_DBPN_NUM_STAGES: 4
+    OPTIMIZER: Adam
+    NUM_CLASSES: 1
+    NUM_STAGES: 6
+    SR_SEG_INV: false
+    JOINT_LEARNING: true
+SOLVER:
+  desc: null
+  value:
+    MAX_ITER: 100000
+    TRAIN_DATASET_RATIO: 0.95
+    SR_PRETRAIN_ITER: 0
+    SEG_PRETRAIN_ITER: 0
+    BATCH_SIZE: 6
+    TASK_LOSS_WEIGHT: 0.3
+    SEG_LOSS_FUNC: BoundaryCombo
+    BOUNDARY_DEC_RATIO: 1.0
+    SR_LOSS_FUNC: L1
+    WB_AND_D_WEIGHT:
+    - 1
+    - 1
+    BCELOSS_WEIGHT:
+    - 1
+    - 1
+    ALPHA_MIN: 0.01
+    DECREASE_RATIO: 1.0
+    SYNC_BATCHNORM: true
+    NORM_SR_OUTPUT: instance
+    LR: 1.0e-05
+    LR_STEPS: []
+    GAMMA: 0.1
+    WARMUP_FACTOR: 1.0
+    WARMUP_ITERS: 5000
+INPUT:
+  desc: null
+  value:
+    IMAGE_SIZE:
+    - 448
+    - 448
+    MEAN:
+    - 0.4741
+    - 0.4937
+    - 0.5048
+    STD:
+    - 0.1621
+    - 0.1532
+    - 0.1523
+DATASET:
+  desc: null
+  value:
+    TRAIN_IMAGE_DIR: datasets/crack_segmentation_dataset/train/images
+    TRAIN_MASK_DIR: datasets/crack_segmentation_dataset/train/masks
+    TEST_IMAGE_DIR: datasets/crack_segmentation_dataset/test/exp-images
+    TEST_MASK_DIR: datasets/crack_segmentation_dataset/test/exp-masks
+OUTPUT_DIR:
+  desc: null
+  value: output/CSSR_SR-SS/eval_AIU/iter_100000
+SEED:
+  desc: null
+  value: 123
+BASE_NET:
+  desc: null
+  value: weights/vgg16_reducedfc.pth
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.15.5
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1696214120.493993
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 1
+      - 16
+      - 17
+      - 23
+      - 37
+      4: 3.10.12
+      5: 0.15.5
+      8:
+      - 5
+test_dir:
+  desc: null
+  value: output/CSSR_SR-SS/
+iteration:
+  desc: null
+  value: 100000
+output_dirname:
+  desc: null
+  value: output/CSSR_SR-SS/eval_AIU/iter_100000
+config_file:
+  desc: null
+  value: output/CSSR_SR-SS/config.yaml
+num_workers:
+  desc: null
+  value: 8
+batch_size:
+  desc: null
+  value: 4
+num_gpus:
+  desc: null
+  value: 1
+test_aiu:
+  desc: null
+  value: true
+trained_model:
+  desc: null
+  value: output/CSSR_SR-SS/model/iteration_100000.pth
+wandb_flag:
+  desc: null
+  value: true
+wandb_prj_name:
+  desc: null
+  value: CSSR_kyoken_test_blur

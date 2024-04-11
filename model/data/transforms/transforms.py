@@ -170,6 +170,10 @@ class ToTensor(object):
         if mask is None:
             return torch.from_numpy(image.astype(np.float32)).permute(2, 0, 1), mask
         else:
+            # x = torch.view_as_real(from_numpy(image.astype(np.float32)))
+            # y = torch.view_as_real(from_numpy(mask.astype(np.float32)))
+            # return x.permute(2, 0, 1), y.permute(2, 0, 1)
+            # return torch.view_as_real(from_numpy(image.astype(np.float32))).permute(2, 0, 1), torch.view_as_real(from_numpy(mask.astype(np.float32))).permute(2, 0, 1)
             return torch.from_numpy(image.astype(np.float32)).permute(2, 0, 1), torch.from_numpy(mask.astype(np.float32)).permute(2, 0, 1)
 
 class ToNumpy(object):

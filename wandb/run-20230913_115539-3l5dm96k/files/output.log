@@ -1,0 +1,27 @@
+Evaluation Starts
+Number of test dataset : 4
+  0%|                                                                                                                                                               | 0/99 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/orange/Crack-detection-CSSR/test.py", line 96, in <module>
+    main()
+  File "/home/orange/Crack-detection-CSSR/test.py", line 91, in main
+    test(args, cfg)
+  File "/home/orange/Crack-detection-CSSR/test.py", line 48, in test
+    inference_for_ss(args, cfg, model, test_loader)
+  File "/home/orange/Crack-detection-CSSR/model/engine/inference.py", line 82, in inference_for_ss
+    iou_scores = np.copy(iou(segment_preds_bi, masks.to("cuda"))[:, np.newaxis])
+  File "/home/orange/Crack-detection-CSSR/model/utils/estimate_metrics.py", line 36, in __call__
+    intersection = (output & target).sum(axis=(1,2,3))
+ValueError: operands could not be broadcast together with shapes (2,1,480,640) (2,1,448,448)
+Traceback (most recent call last):
+  File "/home/orange/Crack-detection-CSSR/test.py", line 96, in <module>
+    main()
+  File "/home/orange/Crack-detection-CSSR/test.py", line 91, in main
+    test(args, cfg)
+  File "/home/orange/Crack-detection-CSSR/test.py", line 48, in test
+    inference_for_ss(args, cfg, model, test_loader)
+  File "/home/orange/Crack-detection-CSSR/model/engine/inference.py", line 82, in inference_for_ss
+    iou_scores = np.copy(iou(segment_preds_bi, masks.to("cuda"))[:, np.newaxis])
+  File "/home/orange/Crack-detection-CSSR/model/utils/estimate_metrics.py", line 36, in __call__
+    intersection = (output & target).sum(axis=(1,2,3))
+ValueError: operands could not be broadcast together with shapes (2,1,480,640) (2,1,448,448)

@@ -1,0 +1,1 @@
+{"PSNR_score": 35.423797607421875, "SSIM_score": 0.9349315166473389, "AIU_scores": 0.22666499937140805, "_timestamp": 1700037138.8772583, "_runtime": 9.831923246383667, "_step": 101, "PSNR_score_mean": 34.2801144917806, "SSIM_score_mean": 0.9207364320755005, "AIU_scores_mean": 0.2049107981003402, "IoU(thresholds)": 0.2402580818293464, "thresholds": 0.99, "_wandb": {"runtime": 9}}
